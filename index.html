@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0> 
+    <title>WebAppConstructor</title>
+    <link rel="stylesheet" href="/css/style.css">
+<body>
+    <div class="container">
+    <a href="https://www.acoustic.ru/" target="_blank"><img src="images/ag_logo_circle.jpg" class="ag_logo"></a>
+    <div class="header_text">
+        <p >Выберите назначение конструкции </p><h1>&#128264</h1>
+    </div>
+    <!-- первые кнопки -->
+    <button id="insulation" class="button_section1"><!-- раздел звукоизоляция -->
+        <img src="images/SoundInsulation.png" alt="">
+    </button>
+    <button id="acoustic" class="button_section2" ><!-- раздел акустика -->
+        <img src="images/Acoustic.png" alt="">
+    </button>
+    <!--Блок выбора конструций  -->
+    <button type="button" class="constr_types_ladel" id="F">ПОЛ</button>
+    <button type="button" class="constr_types_ladel" id="C">ПОТОЛОК</button>
+    <button type="button" class="constr_types_ladel" id="L">ОБЛИЦОВКА</button>
+    <button type="button" class="constr_types_ladel" id="W">ПЕРЕГОРОДКА</button>
+    <!--  Текст блока выбора типа конструций  -->
+    <div class="constr_text">
+        <p >Выберите тип конструкции </p>
+    </div>
+        <!--  Текст блока выбора конструций  -->
+    <div class="constr_choose">
+        <p >Выберите конструкцию </p>
+    </div>
+    <!-- Форма с кнопками типов конструкций -->
+    <form class="form">
+        <button type="button" class="button_cstr_type" name="F" id="floor"  >ПОЛ
+        </button>
+        <button type="button" class="button_cstr_type" name="C" id="ceiling" >ПОТОЛОК
+        </button>
+        <button type="button" class="button_cstr_type" name="L" id="frame" >ОБЛИЦОВКА
+        </button>
+        <button type="button" class="button_cstr_type" name="W" id="partition" >ПЕРЕГОРОДКА 
+        </button> 
+    </form>
+    <!-- форма для созданных кнопок с конструкциями -->
+    <form action="" class="form_constr_list_btn"></form>   
+</div>
+    <script src="script/main.js"></script>
+    <script src="script/db.js"></script>
+</body>
+</html>

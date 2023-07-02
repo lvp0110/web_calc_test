@@ -1,0 +1,268 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+    background: white;
+    margin: 15px;
+    
+}
+.container{
+    display: inline;
+}
+.header_text{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: dimgray;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+.constr_text{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+    padding: 25px;
+    position: relative;
+    top: 10px;
+}
+.ag_logo{
+    width: 70px;
+    margin: 30px;;
+}
+ .button_section1{
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    border: none;
+    background: no-repeat;
+}
+.button_section1 img{
+    border: solid 4px rgb(192, 184, 184);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(236, 231, 231);
+}
+.button_section1 img:hover{
+    border: solid 4px rgb(192, 184, 184);
+    border-radius: 20px;
+    box-shadow: 6px 6px rgb(222, 216, 216);
+    transition: all 0.2s;
+}
+ .button_section2{
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    border: none;
+    background: no-repeat;
+}
+.button_section2 img{
+    border: solid 4px rgb(192, 184, 184);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgb(236, 231, 231);
+    margin-top: 4px;
+}
+.button_section2 img:hover{
+    border: solid 4px rgb(192, 184, 184);
+    border-radius: 20px;
+    box-shadow: 6px 6px rgb(222, 216, 216);
+    margin-top: 4px;        
+    transition: all 0.2s;
+}
+.form{
+    display: none;
+    position: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 400px;
+    width: 410px; */
+}
+.button_cstr_type{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+    height: 100px;
+    border: solid 3px rgb(184, 170, 170);
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button_cstr_type:hover{
+    background: gray;
+    transition: all 0.4s;
+    font-size: x-large;
+}
+.back_button{
+    position: absolute;
+    top: 64px;
+    right: 60px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    border: solid 2px rgb(135, 122, 122);
+}
+.constr_types_ladel{
+    width: 333px;
+    height: 60px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: solid 4px rgb(197, 190, 190);
+    border-radius: 20px;
+    background: no-repeat;
+    box-shadow: 5px 5px gainsboro;
+    display: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 15px;
+}
+.constr_list{
+    position: relative;
+    height: 60px;
+    width: 333px;
+    margin: 2px;
+    border: solid 2px gray;
+    border-radius: 10px;
+    left: auto;
+    right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    top: 25px;
+}
+.constr_list:hover{
+    top: 24px;
+    font-size: 17px;
+    background: rgb(161, 150, 150);
+    transition: all 0.7s;
+}
+.constr_choose{
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23.5px;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+    position: relative;
+    top: 20px;
+}
+.form_constr_list_btn{                                
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+}
+/* @media all and (min-width:820px){
+   
+   
+} */
+@media all and (min-width:660px){
+    .form {
+        display: none;
+        position: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        /* height: 400px; */
+        width: 420px;
+    }
+    .button_cstr_type {
+        display: inline;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: 200px;
+        border: solid 3px rgb(184, 170, 170);
+        border-radius: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .constr_list {
+        position: relative;
+        height: 200px;
+        width: 200px;
+        margin: 2px;
+        border: solid 2px gray;
+        border-radius: 10px;
+        left: auto;
+        right: auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        top: 25px;
+    }
+    .button_section1 {
+        top: 10px;
+        margin-left: 0;
+        margin-right: auto;
+        display: block;
+        position: relative;
+        border: none;
+        background: no-repeat;
+    }
+    .button_section2 {
+        top: 179px;
+        margin-left: 340px;
+        margin-right: auto;
+        display: block;
+        position: absolute;
+        border: none;
+        background: no-repeat
+    }
+    .constr_types_ladel {
+        width: 333px;
+        height: 132px;
+        position: absolute;
+        margin-left: 340px;
+        margin-right: auto;
+        display: block;
+        border: solid 4px rgb(197, 190, 190);
+        border-radius: 20px;
+        background: no-repeat;
+        box-shadow: 5px 5px gainsboro;
+        display: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        top: 141px;
+    }
+}
