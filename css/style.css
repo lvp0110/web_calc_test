@@ -49,7 +49,7 @@ body{
     margin-right: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     color: dimgray;
     text-align: center;
     text-transform: uppercase;
@@ -59,13 +59,14 @@ body{
     margin-left: auto;
     margin-right: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     display: none;
     padding: 25px;
     position: relative;
     top: 10px;
+    color: dimgray;
 }
 .ag_logo{
     width: 70px;
@@ -133,7 +134,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .button_cstr_type:hover{
-    background: gray;
+    background: rgb(212, 206, 206);
     transition: all 0.4s;
     font-size: x-large;
 }
@@ -160,6 +161,8 @@ body{
     display: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     top: 15px;
+    font-size: 17px;
+    color: dimgray;
 }
 .constr_list{
     position: relative;
@@ -172,12 +175,14 @@ body{
     right: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     top: 25px;
+    font-size: initial;
+    color: dimgray;
 }
 .constr_list:hover{
     top: 24px;
     font-size: 17px;
-    background: rgb(161, 150, 150);
     transition: all 0.7s;
+    background: rgb(212, 206, 206);
 }
 .constr_choose{
     margin: auto;
@@ -188,6 +193,8 @@ body{
     display: none;
     position: relative;
     top: 20px;
+    color: dimgray;
+    justify-content: center;
 }
 .form_constr_list_btn{                                
     margin: auto;
@@ -196,10 +203,7 @@ body{
     justify-content: center;
     position: absolute;
 }
-/* @media all and (min-width:820px){
-   
-   
-} */
+
 @media all and (min-width:660px){
     .form {
         display: none;
@@ -231,6 +235,8 @@ body{
         right: auto;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         top: 25px;
+        font-size: initial;
+        color: dimgray;
     }
     .button_section1 {
         top: 10px;
@@ -242,7 +248,7 @@ body{
         background: no-repeat;
     }
     .button_section2 {
-        top: 179px;
+        top: 159px;
         margin-left: 340px;
         margin-right: auto;
         display: block;
@@ -251,7 +257,7 @@ body{
         background: no-repeat
     }
     .constr_types_ladel {
-        width: 333px;
+        width: 270px;
         height: 132px;
         position: absolute;
         margin-left: 340px;
@@ -264,5 +270,74 @@ body{
         display: none;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         top: 141px;
+        font-size: 20px;
+        color: dimgray;
+    }
+    .form_constr_list_btn {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: inherit;
+        position: absolute;
+    }
+    .constr_choose {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 23.5px;
+        text-transform: uppercase;
+        display: none;
+        position: relative;
+        top: 20px;
+        color: dimgray;
+        justify-content: inherit;
+    }
+    .header_text {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: dimgray;
+        text-align: inherit;
+        text-transform: uppercase;
+        display: block;
+    }
+    .form {
+        display: none;
+        position: sticky;
+        margin-left: 0;
+        margin-right: auto;
+        /* height: 400px; */
+        width: 820px;
+    }
+}
+@media all and (min-width:740px){
+    .button_section1 {
+        top: 10px;
+        margin-left: 0;
+        margin-right: auto;
+        display: block;
+        position: relative;
+        border: none;
+        background: no-repeat;
+    }     
+    .form {
+        display: none;
+        position: sticky;
+        margin-left: 0;
+        margin-right: auto;
+        /* height: 400px; */
+        width: 820px;
+    }
+    .constr_text {
+        margin-left: 184px;
+        margin-right: auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 25px;
+        text-align: inherit;
+        text-transform: uppercase;
+        display: none;
+        padding: 25px;
+        position: relative;
+        top: 10px;
     }
 }

@@ -29,7 +29,7 @@ function hideBtns(arrElements){
 floorBtn.onclick = function(){
    insulationButton.disabled = stopBtn === 0;
    textConstr.style.display = 'none';
-   textChoosse.style.display = 'block';
+   textChoosse.style.display = 'flex';
    formBtnConstr.style.display = 'none';
    floorBtn.style.display = 'none';
    constrTypesLadelF.style.display = 'block';
