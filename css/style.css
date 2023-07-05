@@ -84,7 +84,7 @@ body{
 .button_section1 img{
     border: solid 4px rgb(192, 184, 184);
     border-radius: 20px;
-    box-shadow: 5px 5px rgb(236, 231, 231);
+    /* box-shadow: 5px 5px rgb(236, 231, 231); */
 }
 .button_section1 img:hover{
     border: solid 4px rgb(192, 184, 184);
@@ -104,7 +104,7 @@ body{
 .button_section2 img{
     border: solid 4px rgb(192, 184, 184);
     border-radius: 20px;
-    box-shadow: 5px 5px rgb(236, 231, 231);
+    /* box-shadow: 5px 5px rgb(236, 231, 231); */
     margin-top: 4px;
 }
 .button_section2 img:hover{
@@ -203,13 +203,13 @@ body{
     justify-content: center;
     position: absolute;
 }
+/*-------------------------------------*/
 .input_size{
-    display: none;
+    display: flex;
     position: relative;
-    margin-left: initial;
-    margin-right: auto;
-    justify-content: center; 
+    justify-content: center;
     top: 35px;
+    flex-wrap: wrap
 }
 .size{
     width:  330px;
@@ -219,22 +219,24 @@ body{
     padding: revert;
     font-size: 15px;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 .checked_step{
-    display: none;
+    display: flex;
     justify-content: center;
     position: relative;
     top: 40px;
+    height: 50px;
 }
  .checked_step label{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 8px;
     color: dimgray ;
-
 }
 .double_area{
-    display: none;
-    top: 40px;
+    display: flex;
+    height: 50px;
+    top: 20px;
     position: relative;
     justify-content: center;
 }
@@ -242,6 +244,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: dimgray ;
 }
+/*-----------------------------------------*/
 @media all and (min-width:660px){
     .form {
         display: none;
@@ -354,6 +357,21 @@ body{
         margin-right: auto;
         justify-content: left; 
         top: 25px;
+    }
+    .checked_step{
+        display: flex;
+        justify-content: left;
+        position: relative;
+        top: 40px;
+        height: 50px;
+    }
+    .double_area{
+        display: flex;
+        height: 50px;
+        top: 20px;
+        position: relative;
+        justify-content: left;
+        left: 7px;
     }
 }
 @media all and (min-width:740px){
