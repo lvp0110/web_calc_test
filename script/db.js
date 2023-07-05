@@ -26,6 +26,7 @@ function hideBtns(arrElements){
    arrElements.forEach((element) => element.style.display = 'none'); 
 }
 
+
 floorBtn.onclick = function(){
    insulationButton.disabled = stopBtn === 0;
    textConstr.style.display = 'none';
@@ -37,7 +38,19 @@ floorBtn.onclick = function(){
    frameBtn.style.display = 'none';
    partitionBtn.style.display = 'none';
    createConstrBtns(this);
+   let constrListByType = document.querySelectorAll('.constr_list');
+   console.log(constrListByType);
+   constrListByType.forEach(btn=>{
+      // Вешаем событие клик
+      btn.addEventListener('click', function(e) {
+         
+        console.log('Button clicked' + e.target.classList);
+      })
+    })
 }
+
+
+
 ceilingBtn.onclick = function(){
    insulationButton.disabled = stopBtn === 0;
    ceilingBtn.style.display = 'none';

@@ -203,7 +203,45 @@ body{
     justify-content: center;
     position: absolute;
 }
+.input_size{
+    display: none;
+    position: relative;
+    margin-left: initial;
+    margin-right: auto;
+    justify-content: center; 
+    top: 35px;
+}
+.size{
+    width:  330px;
+    height: 50px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: revert;
+    font-size: 15px;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.checked_step{
+    display: none;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+ .checked_step label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px;
+    color: dimgray ;
 
+}
+.double_area{
+    display: none;
+    top: 40px;
+    position: relative;
+    justify-content: center;
+}
+.double_area label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: dimgray ;
+}
 @media all and (min-width:660px){
     .form {
         display: none;
@@ -308,6 +346,14 @@ body{
         margin-right: auto;
         /* height: 400px; */
         width: 820px;
+    }
+    .input_size{
+        display: grid;
+        position: relative;
+        margin-left: initial;
+        margin-right: auto;
+        justify-content: left; 
+        top: 25px;
     }
 }
 @media all and (min-width:740px){
