@@ -28,10 +28,6 @@
     <div class="constr_text">
         <p >Выберите тип конструкции </p>
     </div>
-        <!--  Текст блока выбора конструций  -->
-    <div class="constr_choose">
-        <p >Выберите конструкцию </p>
-    </div>
     <!-- Форма с кнопками типов конструкций -->
     <form class="form">
         <button type="button" class="button_cstr_type" name="F" id="floor"  >ПОЛ
@@ -43,20 +39,51 @@
         <button type="button" class="button_cstr_type" name="W" id="partition" >ПЕРЕГОРОДКА 
         </button> 
     </form>
-    <div action="" class="input_size">
-        <input type="text" name="" id="" class="size" placeholder="ширина">
-        <input type="text" name="" id="" class="size" placeholder="высота">
-    </div>
-    <div class="checked_step">
-        <label for="" class="form-check">Шаг профиля:</label>
-        <label><input type="radio" class="check_input " name="step" value="600" checked> 600</label>
-        <label><input type="radio" class="check_input " name="step" value="400"> 400</label>
-        <label><input type="radio" class="check_input " name="step" value="300"> 300</label>
-    </div> 
-    <div class="double_area">
-        <label class="">Сдвоенный каркас:
-            <input type="checkbox" class="double_check_input" name="doubleFrame">
-        </label>  
+    <!-- Форма ввода размеров и параметров для облицовок и перегородок -->
+    <form action="" id="frame_const_param" style="display: none;">
+        <div action="" class="input_size">
+            <input type="text" name="" id="" class="size" placeholder="ширина конструкции,мм">
+            <input type="text" name="" id="" class="size" placeholder="высота конструкции,мм">
+        </div>
+        <!-- Текст выбора параметров конструкии -->
+        <div class="text_param">выберите параметры констркции
+        </div>
+        <div class="checked_step">
+            <label for="" class="form-check">шаг профиля,мм</label>
+            <label><input type="radio" class="check_input " name="step" value="600" checked> 600</label>
+            <label><input type="radio" class="check_input " name="step" value="400"> 400</label>
+            <label><input type="radio" class="check_input " name="step" value="300"> 300</label>
+        </div> 
+        <div class="double_area">
+            <label class="">сдвоенный каркас:
+                <input type="checkbox" class="double_check_input" name="doubleFrame">
+            </label>  
+        </div>
+    </form>
+    <!-- Форма ввода размеров и параметров для полов -->
+    <form action="" id="floor_const_param" style="display: block;">
+        <div action="" class="input_size">
+            <input type="text" name="" id="" class="size" placeholder="ширина конструкции,мм">
+            <input type="text" name="" id="" class="size" placeholder="длина конструкции,мм">
+        </div>
+        <!-- Текст выбора параметров конструкии -->
+        <div class="text_param">выберите параметры констркции
+        </div>
+        <div class="checked_step">
+            <label for="" class="form-check" style ="" > слой Шумопласт,мм</label><br>
+            <label><input type="radio" class="check_input " name="step" value="600" checked> 20</label>
+            <label><input type="radio" class="check_input " name="step" value="400"> 30</label>
+            <label><input type="radio" class="check_input " name="step" value="300"> 50</label>
+        </div> 
+        <div class="double_area">
+            <label class="">периметр Вибростек:
+                <input type="checkbox" class="double_check_input" name="doubleFrame">
+            </label>  
+        </div>
+    </form>
+      <!--  Текст блока выбора конструций  -->
+      <div class="constr_choose">
+        <p >Выберите конструкцию </p>
     </div>    
     <!-- форма для созданных кнопок с конструкциями -->
     <form action="" class="form_constr_list_btn"></form>   
