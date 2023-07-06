@@ -61,7 +61,7 @@
         </div>
     </form>
     <!-- Форма ввода размеров и параметров для полов -->
-    <form action="" id="floor_const_param" style="display: block;">
+    <form action="" id="floor_const_param" style="display: none;">
         <div action="" class="input_size">
             <input type="text" name="" id="" class="size" placeholder="ширина конструкции,мм">
             <input type="text" name="" id="" class="size" placeholder="длина конструкции,мм">
@@ -70,16 +70,36 @@
         <div class="text_param">выберите параметры констркции
         </div>
         <div class="checked_step">
-            <label for="" class="form-check" style ="" > слой Шумопласт,мм</label><br>
-            <label><input type="radio" class="check_input " name="step" value="600" checked> 20</label>
-            <label><input type="radio" class="check_input " name="step" value="400"> 30</label>
-            <label><input type="radio" class="check_input " name="step" value="300"> 50</label>
+            <label for="" class="form-check"  > слой Шумопласт,мм</label>
+            <label><input type="radio" class="check_input " name="layer" value="20" checked> 20</label>
+            <label><input type="radio" class="check_input " name="layer" value="30"> 30</label>
+            <label><input type="radio" class="check_input " name="layer" value="50"> 50</label>
+        </div> 
+        <div class="checked_step">
+            <label for="" class="form-check"  > пол по лагам</label>
+            <label><input type="radio" class="check_input " name="step" value="20" checked> Вибофлекс</label>
+            <label><input type="radio" class="check_input " name="step" value="30"> Силомер</label>
         </div> 
         <div class="double_area">
             <label class="">периметр Вибростек:
                 <input type="checkbox" class="double_check_input" name="doubleFrame">
             </label>  
         </div>
+    </form>
+    <!-- Форма ввода размеров и параметров для потолков -->
+    <form action="" id="ceiling_const_param" style="display: block;">
+        <div action="" class="input_size">
+            <input type="text" name="" id="" class="size" placeholder="ширина конструкции,мм">
+            <input type="text" name="" id="" class="size" placeholder="длина конструкции,мм">
+        </div>
+        <!-- Текст выбора параметров конструкии -->
+        <div class="text_param">выберите параметры констркции
+        </div>
+        <div action="" class="input_size">
+            <input type="text" name="" id="" class="size" style="margin: 11px;height: auto;" placeholder="длина удлинителя,мм">
+            
+        </div> 
+        
     </form>
       <!--  Текст блока выбора конструций  -->
       <div class="constr_choose">
