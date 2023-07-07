@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width", initial-scale=1.0> 
     <title>WebAppConstructor</title>
     <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
+    
     <div class="container">
     <a href="https://www.acoustic.ru/" target="_blank"><img src="images/ag_logo_circle.jpg" class="ag_logo"></a>
+    <input type="button" class="return_btn" onclick="history.back();" value="Назад"/>
     <div class="header_text">
         <p >Выберите назначение конструкции </p>
     </div>
@@ -87,7 +90,7 @@
         </div>
     </form>
     <!-- Форма ввода размеров и параметров для потолков -->
-    <form action="" id="ceiling_const_param" style="display: block;">
+    <form action="" id="ceiling_const_param" style="display: none;">
         <div action="" class="input_size">
             <input type="text" name="" id="" class="size" placeholder="ширина конструкции,мм">
             <input type="text" name="" id="" class="size" placeholder="длина конструкции,мм">
@@ -96,7 +99,7 @@
         <div class="text_param">выберите параметры конструкции
         </div>
         <div action="" class="input_size">
-            <input type="text" name="" id="" class="size" style="margin: 11px;height: auto;margin-bottom: 30px;" placeholder="длина удлинителя,мм">
+            <input type="text" name="" id="" class="size_ceil"  placeholder="длина удлинителя,мм">
         </div> 
         
     </form>
@@ -109,5 +112,6 @@
 </div>
     <script src="script/main.js"></script>
     <script src="script/db.js"></script>
+    
 </body>
 </html>

@@ -6,6 +6,7 @@ let formBtnConstr = document.querySelector('.form');
 let textChoosse = document.querySelector('.constr_choose');
 let textConstr = document.querySelector('.constr_text');
 let formListBtnConstr = document.querySelector('.form_constr_list_btn');
+let constrTypesLadel = document.querySelector('.constr_types_ladel');
 let constrTypesLadelF = document.getElementById('F');
 let constrTypesLadelC = document.getElementById('C');
 let constrTypesLadelL = document.getElementById('L');
@@ -26,8 +27,8 @@ function hideBtns(arrElements){
    arrElements.forEach((element) => element.style.display = 'none'); 
 }
 
-
 floorBtn.onclick = function(){
+   floorParam.style.display = 'block';
    insulationButton.disabled = stopBtn === 0;
    textConstr.style.display = 'none';
    textChoosse.style.display = 'flex';
@@ -49,9 +50,12 @@ floorBtn.onclick = function(){
     })
 }
 
-
+let frameParam = document.getElementById('frame_const_param');
+let floorParam = document.getElementById('floor_const_param');
+let ceilingParam = document.getElementById('ceiling_const_param');
 
 ceilingBtn.onclick = function(){
+   ceilingParam.style.display = 'block';
    insulationButton.disabled = stopBtn === 0;
    ceilingBtn.style.display = 'none';
    formBtnConstr.style.display = 'none';
@@ -64,6 +68,7 @@ ceilingBtn.onclick = function(){
    createConstrBtns(this);
 }
 frameBtn.onclick = function(){
+   frameParam.style.display = 'block';
    insulationButton.disabled = stopBtn === 0;
    frameBtn.style.display = 'none';
    textConstr.style.display = 'none';

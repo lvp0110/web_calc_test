@@ -256,6 +256,29 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: dimgray ;
 }
+.size_ceil{
+    margin: 11px;height: auto;
+    margin-bottom: 30px; 
+    width:  300px;
+    height: 30px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    padding: revert;
+    font-size: 15px;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.return_btn{
+    height: 50px;
+    width: 50px;
+    clip-path: polygon(40% 0%, 40% 20%, 80% 20%, 80% 80%, 40% 80%, 40% 100%, 0% 50%);
+    color: aqua;
+    background: #0093ff;
+    margin-top: 33px;
+    opacity: 0.6;
+    display: inline-block;
+
+}
 /*-----------------------------------------*/
 @media all and (min-width:660px){
     .form {
@@ -394,6 +417,17 @@ body{
         justify-content: left;
         top: 40px;
         left: 7px;
+    }
+    .size_ceil{
+        margin-top: 25px;
+        margin-bottom: 30px; 
+        width:  300px;
+        height: 30px;
+        border: solid 1px gray;
+        border-radius: 10px;
+        font-size: 15px;    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
     }
 }
 @media all and (min-width:740px){
