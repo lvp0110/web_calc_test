@@ -70,7 +70,8 @@ body{
 }
 .ag_logo{
     width: 70px;
-    margin: 30px;;
+    margin: 30px;
+    filter: drop-shadow(2px 4px 6px rgb(99, 134, 187));
 }
  .button_section1{
     top: 10px;
