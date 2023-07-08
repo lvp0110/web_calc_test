@@ -277,7 +277,8 @@ body{
     margin-top: 33px;
     opacity: 0.6;
     display: inline-block;
-
+    position: absolute;
+    right:  10%;
 }
 /*-----------------------------------------*/
 @media all and (min-width:660px){

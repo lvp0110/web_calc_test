@@ -336,9 +336,9 @@ function returnToMainMenu(){
 
 acousticButton.onclick = function(){
     headerText.style.display = 'none';
-    acousticButton.style.top = 'auto';
-    acousticButton.style.marginLeft = 'auto';
-    acousticButton.style.position = 'relative';
+    // acousticButton.style.top = 'auto';
+    acousticButton.style.marginLeft = '0px';
+    acousticButton.style.position = 'inherit';
     formConstr.style.display = 'none';
     constrText.style.display = 'block';
     insulationButton.style.display = 'none';
